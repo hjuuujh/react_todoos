@@ -4,7 +4,6 @@ import TodoItem from './TodoItem';
 class TodoList extends Component {
     render() {
         const { todos, onRemove } = this.props;
-        console.log(todos);
         const todoList = todos.map((todo) => {
             return (
                 <TodoItem id={todo.id}
