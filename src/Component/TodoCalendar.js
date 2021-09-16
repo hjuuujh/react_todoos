@@ -3,15 +3,16 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
 class TodoCalendar extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
           date: new Date()
         };
+        props.filterTodos(this.state.date);
       }
 
 onChange = (filterTodos, date) => {
-    this.setState({ selectedDate: date }); 
+    this.setState({ selectedDate: date, date:date }); 
     filterTodos(date);
   }
 
@@ -21,6 +22,7 @@ onChange = (filterTodos, date) => {
             <div>
                 <Calendar
                 value={this.state.date}    
+                onp
                 onClickDay={(date) =>this.onChange(filterTodos, date)}
                 />
             </div>
