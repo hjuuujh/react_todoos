@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TodoClass from './TodoClass';
+import TodoFunction from './TodoFunction';
 
 class App extends Component {
 
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div>
         <TodoClass />
+        <TodoFunction />
       </div>
     );
   }

@@ -14,7 +14,7 @@ class TodoClass extends Component {
           todos: [
             { id: 0, text: ' 리액트 소개', checked: false, date:"9/15"},
             { id: 1, text: ' 리액트 설치', checked: false, date:"9/15"},
-            { id: 2, text: ' 리액트 이론', checked: false, date:"9/16"}
+            { id: 2, text: ' 리액트 이론', checked: false, date:"9/20"}
           ],
           filtertodos: [  ]
         }

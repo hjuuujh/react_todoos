@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Todo.css';
+import '../css/Todo.css';
 import TodoList from './TodoList';
 import NewTodo from './NewTodo';
 
