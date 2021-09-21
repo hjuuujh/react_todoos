@@ -6,7 +6,6 @@ function TodoListF(props) {
         return (
             <TodoItemF id={todo.id}
             text={todo.text}
-            checked={todo.checked}
             date={todo.date}
             onRemove={props.onRemove}
             key={todo.id}/>

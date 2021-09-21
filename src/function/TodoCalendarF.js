@@ -4,21 +4,20 @@ import 'react-calendar/dist/Calendar.css';
 
 function TodoCalendarF(props) {
     const [date, setDate] = useState(new Date());
-    useEffect(() => {props.filterTodos(date)},[date])
-    // props.filterTodos(date);
+    useEffect(() => {props.filterTodos(date)},[date]);
 
-    const onChange = (filterTodos, date) => {
-        setDate(date); 
-        filterTodos(date);
-      }
-
+    // const onChange = (date) => {
+    //     setDate(date); 
+    //     // filterTodos(date);
+    //   }
 
     return (
+        
         <div>
             <Calendar
                 value={date}    
                 onp
-                onClickDay={(date) =>onChange(props.filterTodos, date)}
+                onClickDay={(date) =>setDate(date)}
                 />
         </div>
     );

@@ -64,9 +64,7 @@ function TodoFunction(props) {
             onKeyPress={handleKeyPress}
             onChange={handleChange}
             onCreate={handleCreate} 
-            onRemove={handleRemove}
-            filterTodos={filterTodos}
-            date={date}/> 
+            onRemove={handleRemove}/> 
         </div>
     );
 }

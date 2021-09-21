@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodoClass from './TodoClass';
 import TodoFunction from './TodoFunction';
+import TodoMobx from './TodoMobx';
 
 class App extends Component {
 
@@ -10,6 +11,7 @@ class App extends Component {
       <div>
         <TodoClass />
         <TodoFunction />
+        <TodoMobx />
       </div>
     );
   }

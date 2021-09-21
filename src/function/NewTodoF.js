@@ -10,7 +10,7 @@ function NewTodoF(props) {
                     추가
                 </div>
                 </div>
-            </div>
+        </div>
     );
 }
 
