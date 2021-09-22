@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Todo.css';
-import TodoListM from './TodoListM';
-import NewTodoM from './NewTodoM';
-import { observer } from 'mobx-react';
+import TodoListM from './store/container/TodoListM';
+import NewTodoM from './store/container/NewTodoM';
 
 class TodoM extends Component {
   render() {
@@ -26,4 +25,4 @@ class TodoM extends Component {
   }
 }
 
-export default observer(TodoM);
+export default TodoM;

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import todoStore from './TodoStore';
+import TodoStore from '../TodoStore';
 import { observer } from 'mobx-react';
-import TodoItemM from './TodoItemM';
+import TodoItemM from '../../components/TodoItemM';
 
 class TodoListM extends Component {
-    store = todoStore;
+    store = TodoStore;
 
     render() {
         const {filteredtodos} = this.store;

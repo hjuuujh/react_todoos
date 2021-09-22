@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import todoStore from './TodoStore';
+import TodoStore from '../TodoStore';
 import { observer } from 'mobx-react';
 
 class TodoCalendarM extends Component {
-    store = todoStore;
+    store = TodoStore;
 
     render() {
         return (

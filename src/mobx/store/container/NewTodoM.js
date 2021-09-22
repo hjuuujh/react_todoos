@@ -1,10 +1,10 @@
-import '../css/newTodo.css';
+import '../../../css/newTodo.css';
 import { observer } from 'mobx-react';
-import todoStore from './TodoStore';
+import TodoStore from '../TodoStore';
 import React, { Component } from 'react';
 
 class NewTodoM extends Component {
-    store = todoStore;
+    store = TodoStore;
 
     render() {
         return (

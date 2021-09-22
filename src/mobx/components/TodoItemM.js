@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react';
 import React, { Component } from 'react';
-import todoStore from './TodoStore';
+import TodoStore from '../store/TodoStore';
 
 class TodoItemM extends Component {
 
@@ -10,7 +10,7 @@ class TodoItemM extends Component {
             <div className="todo-item" >
                 <div className="remove" onClick={(e) => {
                 e.stopPropagation(); 
-                todoStore.todoRemove(todo.id);}
+                TodoStore.todoRemove(todo.id);}
                 }>&times;</div>
                 <div className={`todo-text`}>
                 <div>{todo.text}</div>
