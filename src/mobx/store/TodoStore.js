@@ -28,7 +28,7 @@ class TodoStore {
       todoRemove : action
     });
 
-    // 수정 필요
+    // ?
     let d = this.selectedDate;
     let filtered = (this.todos).filter(function(element){
      return element.date === d;
