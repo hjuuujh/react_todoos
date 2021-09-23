@@ -9,8 +9,8 @@ class App extends Component {
     
     return (
       <div>
-        {/* <TodoClass /> */}
-        {/* <TodoFunction /> */}
+        <TodoClass />
+        <TodoFunction />
         <TodoMobx />
       </div>
     );
